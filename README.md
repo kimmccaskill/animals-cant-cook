@@ -13,3 +13,6 @@
 - Time spent: 2 hours
 - Access given endpoints to build out application
 - "Now that you are more familiar with your network requests and what data you get back with each endpoint, create a new project and practice your fetch requests with either users, sport teams, or animals endpoints. Build out the frontend and incorporate each of the endpoints in an IdeaBox layout."
+
+### Lesson Info
+- https://frontend.turing.io/lessons/module-3/network-request-exercises.html
