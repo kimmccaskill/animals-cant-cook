@@ -12,7 +12,6 @@ class App extends Component {
   }
 
   addAnimal = (animal) => {
-    console.log(animal)
     const options = {
       method: 'POST',
       body: JSON.stringify({
@@ -27,7 +26,9 @@ class App extends Component {
     };
     
     fetch('http://localhost:3001/api/v1/animals', options)
-      .catch(error => console.log(error));
+      .then(response => response.json())
+      .then(animalData => this.setState({animals: [...this.state.animals, animalData]}))
+      .catch(error => console.log(error))
   }
 
   deleteAnimal = (id) => {
